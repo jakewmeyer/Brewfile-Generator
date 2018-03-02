@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'brewfile'
+
+cli = Brewfile::Commands.new
+
+cli.generate()
