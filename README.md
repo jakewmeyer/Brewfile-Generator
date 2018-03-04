@@ -1,11 +1,9 @@
-<div align="center">
+# Brewfile Generator
 
 ### CLI utility for autogenerating .gitignore files to STDOUT
 
 [![GitHub release](https://img.shields.io/github/release/jakewmeyer/Brewfile-Generator.svg)]()
 [![Build Status](https://travis-ci.org/jakewmeyer/Brewfile-Generator.svg?branch=master)](https://travis-ci.org/jakewmeyer/Brewfile-Generator)
-
-</div>
 
 ## Purpose
 * Written to provide an easy way of generating a [brewfile](https://github.com/Homebrew/homebrew-bundle) from currently installed brews/casks
