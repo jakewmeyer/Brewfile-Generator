@@ -1,7 +1,24 @@
 #!/usr/bin/env ruby
 
-require 'brewfile'
+brewlist = `brew list`
+casklist = `brew cask list` 
 
-cli = Brewfile::Commands.new
+def printer(brewlist, casklist)
+  puts
+  puts "tap \'caskroom/cask\'"
+  puts
+  puts "# Core Homebrew"
 
-cli.generate()
+  brewlist.split("\n").each do |item|
+      puts "brew \'#{item}\'"
+  end
+
+  puts
+  puts "# Cask Apps"
+
+  casklist.split("\n").each do |item|
+      puts "cask \'#{item}\'"
+  end
+end
+
+printer(brewlist, casklist)
