@@ -3,22 +3,20 @@
 brewlist = `brew list`
 casklist = `brew cask list` 
 
-def printer(brewlist, casklist)
-  puts
-  puts "tap \'caskroom/cask\'"
-  puts
-  puts "# Core Homebrew"
+puts
+puts "tap \'caskroom/cask\'"
+puts
+puts "# Core Homebrew"
 
-  brewlist.split("\n").each do |item|
-      puts "brew \'#{item}\'"
-  end
-
-  puts
-  puts "# Cask Apps"
-
-  casklist.split("\n").each do |item|
-      puts "cask \'#{item}\'"
-  end
+brewlist.split("\n").each do |item|
+  puts "brew \'#{item}\'"
 end
 
-printer(brewlist, casklist)
+puts
+puts "# Cask Apps"
+
+casklist.split("\n").each do |item|
+  puts "cask \'#{item}\'"
+end
+
+puts
