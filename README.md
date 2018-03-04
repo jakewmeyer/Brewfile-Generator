@@ -1,39 +1,115 @@
-# Brewfile
+<div align="center">
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/brewfile`. To experiment with that code, run `bin/console` for an interactive prompt.
+### CLI utility for autogenerating .gitignore files to STDOUT
 
-TODO: Delete this and the text above, and describe your gem
+[![GitHub release](https://img.shields.io/github/release/jakewmeyer/Brewfile-Generator.svg)]()
+[![Build Status](https://travis-ci.org/jakewmeyer/Brewfile-Generator.svg?branch=master)](https://travis-ci.org/jakewmeyer/Brewfile-Generator)
 
-## Installation
+</div>
 
-Add this line to your application's Gemfile:
+## Purpose
+* Written to provide an easy way of generating a brewfile from currently installed brews/casks
+* Generating brewfiles makes it easy to migrate to a new mac without forgetting [Homebrew](https://brew.sh/) packages
 
-```ruby
-gem 'brewfile'
+## Install / Setup
+```bash
+$ gem install brewfile
 ```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install brewfile
-
 ## Usage
+### Overwrite existing .gitignore file
+```bash
+$ brewfile > brewfile
+```
 
-TODO: Write usage instructions here
+### Append existing brewfile
+```bash
+$ brewfile >> brewfile
+```
 
-## Development
+### Sample Output
+```ruby
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+tap 'caskroom/cask'
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+# Core Homebrew
+brew 'autoconf'
+brew 'automake'
+brew 'bats'
+brew 'bdw-gc'
+brew 'cmake'
+brew 'coreutils'
+brew 'crystal-lang'
+brew 'curl'
+brew 'dosbox'
+brew 'findutils'
+brew 'fish'
+brew 'gdbm'
+brew 'geo'
+brew 'gettext'
+brew 'git'
+brew 'gmp'
+brew 'go'
+brew 'gradle'
+brew 'grep'
+brew 'gzip'
+brew 'icu4c'
+brew 'jq'
+brew 'libevent'
+brew 'libffi'
+brew 'libgpg-error'
+brew 'libidn2'
+brew 'libksba'
+brew 'libogg'
+brew 'libpng'
+brew 'libtool'
+brew 'libunistring'
+brew 'libvorbis'
+brew 'libyaml'
+brew 'libzip'
+brew 'llvm'
+brew 'mas'
+brew 'maven'
+brew 'nasm'
+brew 'nginx'
+brew 'nmap'
+brew 'node'
+brew 'oniguruma'
+brew 'openssl'
+brew 'openssl@1.1'
+brew 'pcre'
+brew 'pcre2'
+brew 'perl'
+brew 'pkg-config'
+brew 'python'
+brew 'python3'
+brew 'readline'
+brew 'redis'
+brew 'ruby'
+brew 'sdl'
+brew 'sdl_net'
+brew 'sdl_sound'
+brew 'sqlite'
+brew 'terraform'
+brew 'tldr'
+brew 'tmux'
+brew 'unrar'
+brew 'vim'
+brew 'w3m'
+brew 'wget'
+brew 'xz'
 
-## Contributing
+# Cask Apps
+cask 'docker-toolbox'
+cask 'google-chrome'
+cask 'hyper'
+cask 'java'
+cask 'robo-3t'
+cask 'sequel-pro'
+cask 'slack'
+cask 'spotify'
+cask 'vagrant'
+cask 'virtualbox'
+cask 'wireshark'
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/brewfile.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+```
