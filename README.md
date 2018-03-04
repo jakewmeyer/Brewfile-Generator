@@ -8,7 +8,7 @@
 </div>
 
 ## Purpose
-* Written to provide an easy way of generating a [brewfile]() from currently installed brews/casks
+* Written to provide an easy way of generating a [brewfile](https://github.com/Homebrew/homebrew-bundle) from currently installed brews/casks
 * Generating brewfiles makes it easy to migrate to a new mac without forgetting [Homebrew](https://brew.sh/) packages
 
 ## Install / Setup
