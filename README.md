@@ -8,7 +8,7 @@
 </div>
 
 ## Purpose
-* Written to provide an easy way of generating a brewfile from currently installed brews/casks
+* Written to provide an easy way of generating a [brewfile]() from currently installed brews/casks
 * Generating brewfiles makes it easy to migrate to a new mac without forgetting [Homebrew](https://brew.sh/) packages
 
 ## Install / Setup
@@ -17,14 +17,20 @@ $ gem install brewfile
 ```
 
 ## Usage
-### Overwrite existing .gitignore file
+### Overwrite existing brewfile
 ```bash
-$ brewfile > brewfile
+$ brewfile > ~/brewfile
 ```
 
 ### Append existing brewfile
 ```bash
-$ brewfile >> brewfile
+$ brewfile >> ~/brewfile
+```
+
+### Install brews/casks from brewfile
+```bash
+$ cd ~
+$ brew bundle
 ```
 
 ### Sample Output
