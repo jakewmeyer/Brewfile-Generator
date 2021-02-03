@@ -6,8 +6,8 @@ if os != "Darwin\n"
   exit 1
 end
 
-brewlist = `brew list`
-casklist = `brew cask list` 
+brewlist = `brew list --formula`
+casklist = `brew list --cask` 
 
 puts
 puts "tap \'caskroom/cask\'"
