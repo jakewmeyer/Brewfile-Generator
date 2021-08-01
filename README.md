@@ -1,3 +1,8 @@
+# Archive Notes
+
+### Homebrew `brew bundle dump` command offers the same functionality, see [this](https://scott-bollinger.com/using-brew-bundle-to-backup-and-restore-mac-app-store-and-brew-apps) article for an example.
+
+
 # Brewfile Generator
 
 CLI utility for autogenerating .gitignore files to STDOUT
